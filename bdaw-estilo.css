@@ -1,0 +1,179 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  background-color: rgb(245, 245, 245);
+  color: rgb(16, 60, 85);
+}
+
+header {
+  background-color: rgb(43, 88, 53);
+  color: rgb(255, 255, 255);
+  padding: 1rem;
+  text-align: center;
+}
+
+.navbar {
+  background-color: rgb(16, 60, 85);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.event-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  padding: 2rem;
+}
+
+.nav-list {
+  background-color: rgb(16, 60, 85);
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+
+}
+
+.nav-list li {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  position: relative;
+
+}
+
+.nav-list a,
+.nav-list label {
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+  cursor: pointer;
+  padding: 0.5rem 0.75rem;
+  display: block;
+  transition: background 0.3s;
+}
+
+.nav-list a:hover,
+.nav-list label:hover {
+  background: rgb(50, 81, 148);
+  border-radius: 4px;
+}
+
+/* Ocultar checkbox */
+#register-toggle {
+  display: none;
+}
+
+/* Formulario hidden por defecto */
+.register-form {
+  display: none;
+  position: absolute;
+  top: 2.5rem;
+  left: 0;
+  background: rgb(255, 255, 255);
+  padding: 1rem;
+  border-radius: 6px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+  width: 220px;
+  z-index: 100;
+}
+
+/* Mostrar formulario al activar checkbox */
+#register-toggle:checked+label+.register-form {
+  display: block;
+}
+
+/* Estilos del formulario */
+.register-form h2 {
+  margin-bottom: 0.75rem;
+  font-size: 1.1rem;
+  color: rgb(9, 42, 85);
+}
+
+.register-form label {
+  display: block;
+  margin-top: 0.5rem;
+  font-size: 0.9rem;
+  color: rgb(7, 7, 7);
+}
+
+.register-form label:hover {
+  background-color: rgb(233, 231, 231);
+  cursor: default;
+}
+
+.register-form input {
+  width: 100%;
+  padding: 0.4rem;
+  margin-top: 0.25rem;
+  border: 1px solid rgb(228, 213, 213);
+  border-radius: 4px;
+}
+
+.register-form button {
+  margin-top: 0.75rem;
+  width: 100%;
+  padding: 0.5rem;
+  background: rgb(29, 85, 46);
+  color: rgb(255, 255, 255);
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.register-form button:hover {
+  background: rgb(33, 136, 56);
+}
+
+.boton-inicio {
+  background-color: rgb(9, 42, 85);
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(28, 52, 78, 0.1);
+  display: flex;
+  flex-direction: column-reverse;
+  gap: 15px;
+  padding: 1.5rem;
+  position: fixed;
+  bottom: 60px;
+  right: 55px;
+}
+
+.boton-inicio a {
+  color: rgb(255, 255, 255);
+  font-size: 2rem;
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+}
+
+.boton-inicio:hover {
+  background-color: rgb(50, 81, 148);
+  box-shadow: 8px 4px 8px rgba(16, 42, 43, 0.2);
+}
+
+.titulo-pag {
+  background-color: rgb(27, 82, 30);
+  color: rgb(255, 255, 255);
+  width: 100%;
+  height: 100%;
+  font-size: 3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.countdown {
+  font-size: 2rem;
+  margin-top: 1rem;
+  color: rgb(221, 219, 219);
+  background-color: rgb(31, 116, 90);
+  display: flex;
+  justify-content: center;
+  width: 500px;
+  height: 50px;
+}
