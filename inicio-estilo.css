@@ -139,6 +139,7 @@ header {
   text-align: center;
   position: relative;
 }
+
 .event:hover {
   transform: scale(1.05);
   transition: 0.3s;
@@ -150,6 +151,39 @@ header {
   object-fit: cover;
   border-radius: 10px 10px 0 0;
 }
+
+.boton-info {
+  position: relative;
+  background-color: rgb(33, 136, 56);
+  border: none;
+  padding: 12px 24px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+.boton-info:hover {
+  background-color: rgb(29, 85, 46);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+}
+.tooltip {
+text-decoration: none;  
+color: rgb(255, 255, 255);
+font-size: 1.5rem;
+}
+
+.boton-inicio:hover {
+  background-color: #2980b9;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.5);
+}
+
+
+
+
+
+
+
+
 
 .countdown {
   font-size: 1.2rem;
@@ -167,7 +201,7 @@ header {
   padding: 1.5rem;
   position: fixed;
   bottom: 60px;
-  right: 55px;  
+  right: 55px;
 }
 
 .boton-inicio a {
@@ -176,8 +210,8 @@ header {
   text-decoration: none;
   padding: 0.5rem 1rem;
 }
-  
-.boton-inicio:hover {  
+
+.boton-inicio:hover {
   background-color: rgb(50, 81, 148);
   box-shadow: 8px 4px 8px rgba(16, 42, 43, 0.2);
 }

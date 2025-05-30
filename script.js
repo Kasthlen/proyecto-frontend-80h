@@ -16,7 +16,7 @@
         const minutes = Math.floor((diff / (1000 * 60)) % 60);
         const seconds = Math.floor((diff / 1000) % 60);
 
-        el.textContent = `Faltan ${days}d ${hours}h ${minutes}m ${seconds}s`;
+        el.textContent = `Faltan${days}d ${hours}h ${minutes}m ${seconds}s`;
       });
     }
 
